@@ -11,7 +11,7 @@ public class Radio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id",nullable = false)
     private int id;
-    private String Modelo;
+    private String modelo;
     private double precio;
 
     private int stock;
@@ -22,7 +22,7 @@ public class Radio {
 
     public Radio(int id, String modelo, double precio, int stock) {
         this.id = id;
-        Modelo = modelo;
+        this.modelo = modelo;
         this.precio = precio;
         this.stock = stock;
     }
@@ -36,11 +36,11 @@ public class Radio {
     }
 
     public String getModelo() {
-        return Modelo;
+        return modelo;
     }
 
     public void setModelo(String modelo) {
-        Modelo = modelo;
+        this.modelo = modelo;
     }
 
     public double getPrecio() {
